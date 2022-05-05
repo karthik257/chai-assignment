@@ -38,7 +38,7 @@ export const ProductList = () => {
       return [...prev, item];
     });
   };
-const [clickedImg,setClickedImg]=useState(false)
+// const [clickedImg,setClickedImg]=useState(false)
   return (
     <div>
       <ProductHeader item={data.length} />
