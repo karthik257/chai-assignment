@@ -44,12 +44,24 @@ export const CheckoutComponent = () => {
           return (
             <div key={item.id} className="checkout-item-container">
               <div className="left-items">
-                <div style={{padding:"5px"}}>{item.name}</div>
-                <div style={{padding:"5px"}}>Special Design</div>
-                <div style={{padding:"5px"}}> ${item.price} In stock</div>
+                <div style={{ padding: "5px", cursor: "pointer" }}>
+                  {item.name}
+                </div>
+                <div style={{ padding: "5px", cursor: "pointer" }}>
+                  Special Design
+                </div>
+                <div style={{ padding: "5px", cursor: "pointer" }}>
+                  {" "}
+                  ${item.price} In stock
+                </div>
               </div>
               <div className="right-img">
-                <img src={item.image} alt="item" className="img-checkout" />
+                <img
+                  src={item.image}
+                  alt="item"
+                  className="img-checkout"
+                  style={{ cursor: "pointer" }}
+                />
               </div>
             </div>
           );
