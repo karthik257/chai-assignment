@@ -14,6 +14,8 @@ export const CheckoutComponent = () => {
     setSelectedItems([]);
   };
   const [total, setTotal] = useState(0);
+const [data,setData] = useState([])
+
   useEffect(() => {
     function getSum() {
       let sum = 0;
@@ -23,13 +25,29 @@ export const CheckoutComponent = () => {
       setTotal(sum);
     }
     getSum();
+    console.log(selectedItems);
+    const group = {};
+
+    selectedItems.forEach((e) => {
+      const o = (group[e.name] = group[e.name] || { ...e, qty: 0 });
+      o.qty += e.qty;
+    });
+
+    var res = Object.values(group);
+    console.log(res);
+    setData(res)
+
+
   }, [selectedItems]);
+
+
+
   const devlieryCharge = 7.2;
   return (
     <>
       <div className="checkout-main-container">
         <div>
-          <div style={{ cursor: "pointer",fontSize:"2rem" }}>
+          <div style={{ cursor: "pointer", fontSize: "2rem" }}>
             <HiOutlineArrowNarrowLeft
               onClick={() => {
                 navigate("/");
@@ -40,12 +58,12 @@ export const CheckoutComponent = () => {
             <h1>Check out</h1>
           </div>
         </div>
-        {selectedItems.map((item) => {
+        {data.map((item) => {
           return (
             <div key={item.id} className="checkout-item-container">
               <div className="left-items">
                 <div style={{ padding: "5px", cursor: "pointer" }}>
-                  {item.name}
+                  {item.name} x {item.qty+1}
                 </div>
                 <div style={{ padding: "5px", cursor: "pointer" }}>
                   Special Design

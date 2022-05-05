@@ -27,17 +27,26 @@ export const ProductList = () => {
   useEffect(() => {
     getData();
   }, []);
+
+
   const handleItem = ({ id, name, price, image }) => {
+    let found = selectedItems.findLast((itemId) => itemId.id === id);
+    let qty=0
+    if(found) qty=found.qty+1
     const item = {
       id,
       name,
       price,
       image,
+      qty
     };
     setSelectedItems((prev) => {
       return [...prev, item];
     });
-  };
+};
+  
+
+
 // const [clickedImg,setClickedImg]=useState(false)
   return (
     <div>
