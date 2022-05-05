@@ -1,4 +1,4 @@
-import React, {  useEffect,useState, useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { ItemContext } from "./ItemContext";
 import { AiOutlineArrowLeft, AiOutlinePlus } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -14,12 +14,15 @@ export const CheckoutComponent = () => {
   };
   const [total, setTotal] = useState(0);
   useEffect(() => {
-    let sum = 0;
-    for (let i = 0; i < selectedItems.length; i++) {
-      sum += selectedItems[i].price;
+    function getSum() {
+      let sum = 0;
+      for (let i = 0; i < selectedItems.length; i++) {
+        sum += selectedItems[i].price;
+      }
+      setTotal(sum);
     }
-    setTotal(sum);
-  }, []);
+    getSum();
+  }, [selectedItems]);
   const devlieryCharge = 7.2;
   return (
     <>
