@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chai-assignment/static/css/main.7aabac30.css",
-    "main.js": "/chai-assignment/static/js/main.76ac4508.js",
+    "main.js": "/chai-assignment/static/js/main.6704985b.js",
     "static/js/787.d4228d92.chunk.js": "/chai-assignment/static/js/787.d4228d92.chunk.js",
     "index.html": "/chai-assignment/index.html",
     "main.7aabac30.css.map": "/chai-assignment/static/css/main.7aabac30.css.map",
-    "main.76ac4508.js.map": "/chai-assignment/static/js/main.76ac4508.js.map",
+    "main.6704985b.js.map": "/chai-assignment/static/js/main.6704985b.js.map",
     "787.d4228d92.chunk.js.map": "/chai-assignment/static/js/787.d4228d92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aabac30.css",
-    "static/js/main.76ac4508.js"
+    "static/js/main.6704985b.js"
   ]
 }
