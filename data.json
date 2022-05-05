@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "SeaShell Necklace",
+        "price": 15,
+        "image": "https://images.pexels.com/photos/8352995/pexels-photo-8352995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 2,
+        "name": "Tote Bag",
+        "price": 36,
+        "image": "https://images.pexels.com/photos/5462565/pexels-photo-5462565.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id": 3,
+        "name": "Scarf",
+        "price": 16,
+        "image": "https://images.pexels.com/photos/2120584/pexels-photo-2120584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 4,
+        "name": "Metal Earrings",
+        "price": 12,
+        "image": "https://images.pexels.com/photos/4595719/pexels-photo-4595719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 5,
+        "name": "Silver Earrings",
+        "price": 35,
+        "image": "https://images.pexels.com/photos/9332189/pexels-photo-9332189.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+        "id": 6,
+        "name": "Cotton Threaded Earrings",
+        "price": 10,
+        "image": "https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 7,
+        "name": "Pendant",
+        "price": 20,
+        "image": "https://images.pexels.com/photos/135486/pexels-photo-135486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 8,
+        "name": "Yellow Sapphire",
+        "price": 25,
+        "image": "https://images.pexels.com/photos/4019461/pexels-photo-4019461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    }
+]
