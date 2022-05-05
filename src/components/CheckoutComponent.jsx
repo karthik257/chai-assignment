@@ -4,6 +4,7 @@ import {  AiOutlinePlus } from "react-icons/ai";
 import { HiOutlineArrowNarrowLeft} from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import SliderComponent from "./SliderComponent";
+import "./CheckoutComponent.css";
 
 export const CheckoutComponent = () => {
   const { selectedItems, setSelectedItems } = useContext(ItemContext);

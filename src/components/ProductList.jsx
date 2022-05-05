@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { ItemContext } from "./ItemContext";
 import { ProductHeader } from "./ProductHeader";
 import { ProductFooter } from "./ProductFooter";
+import "./ProductList.css";
+
 
 export const ProductList = () => {
   const [data, setData] = useState([]);

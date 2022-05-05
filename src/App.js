@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { CheckoutComponent } from "./components/CheckoutComponent";
 import { ProductComponent } from "./components/ProductComponent";
-// import { ErrorComponent } from "./components/ErrorComponent";
+import { ErrorComponent } from "./components/ErrorComponent";
 import { ItemContext } from "./components/ItemContext";
 import { useState } from "react";
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductComponent />} />
           <Route path="checkout" element={<CheckoutComponent />} />
-          {/* <Route path="*" element={<ErrorComponent />} /> */}
+           <Route path="*" element={<ErrorComponent />} /> 
         </Routes>
       </ItemContext.Provider>
     </>

@@ -2,6 +2,7 @@ import React from 'react'
 import { GrFilter } from "react-icons/gr";
 import { BiSortAlt2 } from "react-icons/bi";
 import { IoIosArrowDown } from "react-icons/io";
+import "./ProductHeader.css";
 
 export const ProductHeader = (props) => {
   return (
