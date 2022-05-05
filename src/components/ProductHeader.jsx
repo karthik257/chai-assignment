@@ -7,17 +7,17 @@ export const ProductHeader = (props) => {
   return (
     <div className="featured-container">
       <div>
-        <h1>Featured</h1>
+        <h1 style={{ cursor: "pointer" }}>Featured</h1>
       </div>
       <div className="featured-bottom">
         <div className="item-listed">{props.item} items listed</div>
-        <div className="">
+        <div style={{cursor:"pointer"}}>
           <BiSortAlt2 />
           Sort
           <IoIosArrowDown />
         </div>
 
-        <div className="">
+        <div style={{cursor:"pointer"}}>
           <GrFilter />
           Filter
         </div>

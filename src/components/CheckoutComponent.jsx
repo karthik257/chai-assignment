@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { ItemContext } from "./ItemContext";
-import { AiOutlineArrowLeft, AiOutlinePlus } from "react-icons/ai";
+import {  AiOutlinePlus } from "react-icons/ai";
+import { HiOutlineArrowNarrowLeft} from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import SliderComponent from "./SliderComponent";
 
@@ -28,8 +29,8 @@ export const CheckoutComponent = () => {
     <>
       <div className="checkout-main-container">
         <div>
-          <div>
-            <AiOutlineArrowLeft
+          <div style={{ cursor: "pointer",fontSize:"2rem" }}>
+            <HiOutlineArrowNarrowLeft
               onClick={() => {
                 navigate("/");
               }}
@@ -43,9 +44,9 @@ export const CheckoutComponent = () => {
           return (
             <div key={item.id} className="checkout-item-container">
               <div className="left-items">
-                <div>{item.name}</div>
-                <div>Special Design</div>
-                <div> ${item.price} In stock</div>
+                <div style={{padding:"5px"}}>{item.name}</div>
+                <div style={{padding:"5px"}}>Special Design</div>
+                <div style={{padding:"5px"}}> ${item.price} In stock</div>
               </div>
               <div className="right-img">
                 <img src={item.image} alt="item" className="img-checkout" />
@@ -55,7 +56,7 @@ export const CheckoutComponent = () => {
         })}
         <div className="payment-header">
           <h2>Payment</h2>
-          <h3 className="add-card">
+          <h3 className="add-card" style={{ cursor: "pointer" }}>
             <AiOutlinePlus />
             &nbsp; Add New Card
           </h3>
