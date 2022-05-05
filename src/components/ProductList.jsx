@@ -66,8 +66,9 @@ const [clickedImg,setClickedImg]=useState(false)
               </div>
               <div className="item-name-price">
                 <div>{item.name}</div>
-                <div>{item.price}</div>
+                <div>${item.price}</div>
               </div>
+              <div className="special-design">Special Design</div>
             </div>
           );
         })}
