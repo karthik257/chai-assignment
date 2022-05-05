@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { CheckoutComponent } from "./components/CheckoutComponent";
+import { ProductComponent } from "./components/ProductComponent";
+import { ErrorComponent } from "./components/ErrorComponent";
+import { ItemContext } from "./components/ItemContext";
+import { useState } from "react";
 function App() {
+  const [selectedItems, setSelectedItems] = useState([]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ItemContext.Provider value={{ selectedItems, setSelectedItems }}>
+        <Routes>
+          <Route path="/" element={<ProductComponent />} />
+          <Route path="checkout" element={<CheckoutComponent />} />
+          <Route path="*" element={<ErrorComponent />} />
+        </Routes>
+      </ItemContext.Provider>
+    </>
   );
 }
 
