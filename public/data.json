@@ -46,5 +46,48 @@
         "name": "Yellow Sapphire",
         "price": 25,
         "image": "https://images.pexels.com/photos/4019461/pexels-photo-4019461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 9,
+        "name": "Pearl Pure",
+        "price": 35,
+        "image": "https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 10,
+        "name": "Silver Band",
+        "price": 55,
+        "image": "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 11,
+        "name": "Watch Black",
+        "price": 65,
+        "image": "https://images.pexels.com/photos/1453008/pexels-photo-1453008.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+    },
+    {
+        "id": 12,
+        "name": "Wrist band",
+        "price": 30,
+        "image": "https://images.pexels.com/photos/998521/pexels-photo-998521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 13,
+        "name": "Necklace",
+        "price": 34,
+        "image": "https://images.pexels.com/photos/177332/pexels-photo-177332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 14,
+        "name": "Heart Pendant",
+        "price": 28,
+        "image": "https://images.pexels.com/photos/735276/pexels-photo-735276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        "id": 15,
+        "name": "Gold Bangle",
+        "price": 70,
+        "image": "https://images.pexels.com/photos/445986/pexels-photo-445986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     }
 ]
+
