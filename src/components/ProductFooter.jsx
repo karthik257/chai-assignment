@@ -9,16 +9,16 @@ export const ProductFooter = (props) => {
 
   return (
     <div className="product-footer-container">
-      <div style={{ cursor: "pointer" }}>
+      <div className="product-footer-icons" style={{ cursor: "pointer" }}>
         <CgHome />
       </div>
-      <div style={{ cursor: "pointer" }}>
+      <div className="product-footer-icons" style={{ cursor: "pointer" }}>
         <BsSearch />
       </div>
-      <div style={{ cursor: "pointer" }}>
+      <div className="product-footer-icons" style={{ cursor: "pointer" }}>
         <BsCartDash /> - {props.len}
       </div>
-      <div style={{ cursor: "pointer" }}>
+      <div className="product-footer-icons" style={{ cursor: "pointer" }}>
         <HiOutlineDotsHorizontal />
       </div>
     </div>
