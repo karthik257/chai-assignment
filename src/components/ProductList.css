@@ -1,31 +1,8 @@
-/* body {
-    background-color: white;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-}
-
-.featured-container h1 {
-    color: #6E4E39;
-    margin-bottom: 5px;
-}
-
-.featured-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-
-.item-listed {
-    color: #6E4E39;
-}
 
 .product-footer-container {
     display: flex;
     justify-content: space-between;
+    font-size: 2.2rem;
 }
 
 .img-product {
@@ -38,6 +15,7 @@
 .btn-container {
     display: flex;
     justify-content: center;
+    margin: 40px 0px;
 }
 
 .btn-buy,
@@ -98,12 +76,13 @@
 
 .product-main-container {
     margin: 50px auto;
-    width: 540px;
+    width: 80%;
 }
 
 .product-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;   */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
 }
 
@@ -120,14 +99,15 @@
 }
 
 .product-footer-container {
-    width: 70%;
-    margin: 45px auto;
+    width: 90%;
+    margin: 50px auto;
     color: gray;
 }
 
 .checkout-main-container {
     margin: 50px auto;
-    width: 540px;
+    width: 70%;
+    max-width: 600px;
 }
 
 .checkout-main-container h1 {
@@ -164,55 +144,124 @@
 
 
 
-.visa-container {
-    height: 300px;
-    border-radius: 15px;
-    background-color: #8687C0;
-    cursor: pointer;
-}
-
-.visa-title {
-    font-family: 'Cantarell',
-        sans-serif;
-    color: white;
-    font-size: 3rem;
-    margin: 20px 50px 50px 50px;
-}
-
-.visa-number {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 50px 30px 50px;
-    color: #D6D6D6;
-    font-size: 2rem;
-    align-items: flex-end
-}
-
-.visa-holder-heading {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 50px 5px 50px;
-    color: #D6D6D6;
-}
-
-.visa-holder-details {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 50px 50px 50px;
-    color: #F8F8F8;
-}
-
-.visa-pink {
-    background-color: #FF2A2A !important;
-}
-
-.visa-blue {
-    background-color: #2a6eff !important;
-}
-
-
 .special-design {
-    color: #D6D6D6;
+    color: #8F8F8F !important;
     font-size: 14px;
     padding: 5px;
-} */
+}
+
+
+@media only screen and (max-width: 730px) {
+    .visa-container {
+        height: 200px;
+        border-radius: 15px;
+        background-color: #8687C0;
+        cursor: pointer;
+    }
+
+    .visa-title {
+        font-family: 'Cantarell',
+            sans-serif;
+        color: white;
+        font-size: 2rem;
+        margin: 10px 25px 25px 25px;
+    }
+
+    .visa-number {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 25px 15px 25px;
+        color: #D6D6D6;
+        font-size: 1rem;
+        align-items: flex-end
+    }
+
+    .visa-holder-heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 25px 3px 25px;
+        color: #D6D6D6;
+    }
+
+    .visa-holder-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 25px 25px 25px;
+        color: #F8F8F8;
+    }
+}
+
+
+@media only screen and (max-width: 464) {
+    .visa-container {
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .visa-title {
+        font-family: 'Cantarell',
+            sans-serif;
+        color: white;
+        font-size: 1rem;
+        margin: 5px 12px 12px 12px;
+    }
+
+    .visa-number {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 12px 7px 12px;
+        color: #D6D6D6;
+        font-size: 0.2rem;
+        align-items: flex-end
+    }
+
+    .visa-holder-heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 12px 1px 12px;
+        color: #D6D6D6;
+    }
+
+    .visa-holder-details {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 12px 12px 12px;
+        color: #F8F8F8;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .product-footer-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+
+    .featured-container {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .left-items :nth-child(1) {
+        color: #3D3D3D;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .left-items :nth-child(2) {
+        color: #D6D6D6;
+        font-size: 12px;
+    }
+
+    .left-items :nth-child(3) {
+        color: #8F8F8F;
+        font-size: 8px;
+        font-weight: bold;
+    }
+}
