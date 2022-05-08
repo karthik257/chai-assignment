@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-import "./SliderComponent.css";
+// import "./SliderComponent.css";
 
 
 export default class SimpleSlider extends Component {

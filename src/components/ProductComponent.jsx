@@ -1,5 +1,4 @@
 import React from "react";
-// import { ProductFooter } from "./ProductFooter";
 import { ProductList } from "./ProductList";
 
 export const ProductComponent = () => {
@@ -7,7 +6,6 @@ export const ProductComponent = () => {
     <>
       <div className="product-main-container">
         <ProductList />
-        {/* <ProductFooter /> */}
       </div>
     </>
   );
